@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pedra, papel ou tesoura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/materialize.css" rel="stylesheet"/>
+    </head>
+    <body class="indigo lighten-3">
+        <div class="row">
+            <div class="card-content z-depth-1 col m4 offset-m4 white">
+                <p>
+                    <b>
+                        Regra: O jogador deve escolher uma opção entre pedra, papel ou tesoura e depois o computador escolherá uma opção aleatória e mostrará o resultado
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        Pedra vence tesoura, tesoura vence papel, papel vence pedra.
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        Bom jogo, e boa sorte!
+                    </b>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="card-content z-depth-1 col m4 offset-m4 white"> 
+                    <div class="col m4">
+                        <div class="input-field col m12">
+                            <input onclick="calcular('pedra')" type="button" value="Pedra" style="width: 100%;" />
+                        </div> 
+                        <div class="input-field col m12">
+                            <input onclick="calcular('papel')" type="button" value="Papel" style="width: 100%;"/>
+                        </div> 
+                        <div class="input-field col m12">
+                            <input onclick="calcular('tesoura')" type="button" value="Tesoura" style="width: 100%;" />
+                        </div> 
+                        <script src="js/materialize.js"></script>
+                        <script src="js/index.js"></script>
+                    </div>
+                    <div class="col m8 valign-wrapper">
+                        <p id="mensagem">Escolha uma opção!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m4 offset-m4">
+                    <blockquote class="white">
+                        <p id="placarjogador"></p>
+                    </blockquote>
+                    <blockquote class="white">
+                        <p id="placarcomputador"></p>
+                    </blockquote>
+                    <blockquote class="white">
+                        <p id="placarempate"></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
